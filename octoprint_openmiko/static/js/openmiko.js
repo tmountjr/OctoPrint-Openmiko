@@ -83,6 +83,11 @@ $(function() {
                     });
             };
 
+            // Don't display anything if the webcam is turned off in the global settings.
+            if (! self.settingsViewModel.settings.webcam.webcamEnabled()) {
+                return [];
+            }
+
             return [
                 { name: "OpenMiko", type: "section", layout: "horizontal", children: [
                     { name: "Day Mode", type: "javascript", javascript: dayMode, enabled: true },
