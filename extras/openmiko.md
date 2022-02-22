@@ -8,27 +8,22 @@ authors:
 - Tom Mount
 license: MIT
 
-# TODO
 date: 2022-02-22
 
 homepage: https://github.com/tmountjr/OctoPrint-OpenMiko
 source: https://github.com/tmountjr/OctoPrint-OpenMiko
 archive: https://github.com/tmountjr/OctoPrint-OpenMiko/archive/main.zip
 
-# TODO
 tags:
 - webcam
 - openmiko
 - timelapse
 
-# TODO
-# When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
 screenshots:
 - url: /screenshot.png
   alt: Control page of OctoPrint with OpenMiko plugin enabled
   caption: Day Mode and Night Mode buttons
 
-# TODO
 featuredimage: /screenshot.png
 
 compatibility:
