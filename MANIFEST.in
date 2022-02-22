@@ -1,4 +1,2 @@
 include README.md
-recursive-include octoprint_openmiko/templates *
-recursive-include octoprint_openmiko/translations *
 recursive-include octoprint_openmiko/static *
