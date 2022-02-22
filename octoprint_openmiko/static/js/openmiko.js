@@ -7,7 +7,7 @@
 $(function() {
     function OpenmikoViewModel(parameters) {
         var self = this;
-        self.settingsViewModel = parameters[1];
+        self.settingsViewModel = parameters[0];
 
         self.getAdditionalControls = function() {
             var streamUrl = self.settingsViewModel.settings.webcam.streamUrl();
@@ -32,7 +32,7 @@ $(function() {
                             reject({
                                 status: xhr.status,
                                 statusText: xhr.statusText,
-                                url: xhr.url,
+                                url,
                             });
                         }
                     };

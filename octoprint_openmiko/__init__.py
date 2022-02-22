@@ -11,7 +11,6 @@ class OpenmikoPlugin(octoprint.plugin.AssetPlugin):
     def get_assets(self):
         return {
             "js": ["js/openmiko.js"],
-            "css": ["css/openmiko.css"],
         }
 
     # ~~ Softwareupdate hook
