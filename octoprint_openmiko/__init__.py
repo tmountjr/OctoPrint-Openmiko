@@ -29,6 +29,11 @@ class OpenmikoPlugin(octoprint.plugin.AssetPlugin):
                 "user": "tmountjr",
                 "repo": "OctoPrint-Openmiko",
                 "current": self._plugin_version,
+                "stable_branch": {
+                    "name": "Stable",
+                    "branch": "main",
+                    "commitish": ["main"]
+                },
 
                 # update method: pip
                 "pip": "https://github.com/tmountjr/OctoPrint-Openmiko/archive/{target_version}.zip",
