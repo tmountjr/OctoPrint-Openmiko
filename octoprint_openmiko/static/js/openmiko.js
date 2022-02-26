@@ -10,6 +10,11 @@ $(function() {
         self.settingsViewModel = parameters[0];
 
         self.getAdditionalControls = function() {
+            // Don't display anything if the webcam is turned off in the global settings.
+            if (!self.settingsViewModel.settings.webcam.webcamEnabled()) {
+                return [];
+            }
+
             var streamUrl = self.settingsViewModel.settings.webcam.streamUrl();
             var parsedUrl = new URL(streamUrl);
             var apiUrl = parsedUrl.protocol + '//' + parsedUrl.hostname+ ':8081/api';
@@ -82,11 +87,6 @@ $(function() {
                         console.log('Success!');
                     });
             };
-
-            // Don't display anything if the webcam is turned off in the global settings.
-            if (! self.settingsViewModel.settings.webcam.webcamEnabled()) {
-                return [];
-            }
 
             return [
                 { name: "OpenMiko", type: "section", layout: "horizontal", children: [
